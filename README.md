@@ -32,8 +32,16 @@ Content: Paarl SPCA Official Website [Accessed 14 August 2026]
 - Added visual styles: hover, focus, box-shadow, border-radius
 - Made responsive: Media queries for desktop (1024px+), tablet (768px), mobile (480px) with relative units (rem, %, em)
 
+
+### Part 3 Changes - 02 Nov 2026
+- Implemented JS interactivity: Form validation, live search ID animalSearch, dynamic year currentYear, donation selector - js/script.js 71 lines (was 1 line)
+- Added SEO: Unique title, meta description, keywords, author ST10504857, OG tags on all 5 HTML pages
+- Integrated interactive map: Leaflet.js 1.9.4 at Paarl coords -33.7345,18.9622 on index, about, contact pages
+- Enhanced forms: IDs contactForm, adoptionForm with required + JS validation regex
+- Updated search: Filter for .animal-card and .service-card classes
+
 ## GitHub Repository
 https://github.com/ST10504857/WEDE5020-Paarl-SPCA
 
 ## Website Live Link (for Part 3)
-To be deployed on Netlify/GitHub Pages
+Live: https://we-de5020-paarl-spca.netlify.app (or your actual Netlify link) - Auto deploys from main
