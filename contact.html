@@ -1,31 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact | Paarl SPCA</title>
-    <link rel="stylesheet" href="css/style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Paarl SPCA | Get in Touch Drakenstein</title>
+<meta name="description" content="Contact Paarl SPCA in Drakenstein. Call us to adopt, report cruelty, or volunteer. We're here to help animals in Paarl.">
+<meta name="keywords" content="contact Paarl SPCA, phone number, Paarl animal rescue">
+<meta name="author" content="ST10504857">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
 </head>
 <body>
 <header>
-    <h1>Paarl SPCA</h1>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="service.html">Services</a>
-        <a href="enquiry.html">Enquiry</a>
-        <a href="contact.html">Contact</a>
-    </nav>
+<h1>Paarl SPCA</h1>
+<nav>
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="services.html">Services</a>
+<a href="enquiry.html">Enquiry</a>
+<a href="contact.html">Contact</a>
+</nav>
 </header>
 <main>
-    <h2>Contact Us</h2>
-    <p><strong>Address:</strong> 123 SPCA Road, Paarl, 7646</p>
-    <p><strong>Phone:</strong> 021 872 5432</p>
-    <p><strong>Email:</strong> info@paarlspca.co.za</p>
-    <p><strong>Hours:</strong> Mon - Sat: 9am - 4pm</p>
+<h2>Contact Us</h2>
+<p>We'd love to hear from you! Use the form below or find us on the map.</p>
+<form id="contactForm" novalidate>
+<label>Name: <input type="text" name="name" required></label><br><br>
+<label>Email: <input type="email" name="email" required></label><br><br>
+<label>Message:<br><textarea name="message" required rows="5" style="width:100%; max-width:500px;"></textarea></label><br><br>
+<button type="submit">Send Message</button>
+</form>
+<h3>Our Location</h3>
+<div id="map" style="height:350px; width:100%; border-radius:10px; margin:20px 0;"></div>
+<p><strong>Address:</strong> Paarl SPCA, Drakenstein, Western Cape</p>
 </main>
-<footer>
-    <p>&copy; 2026 Paarl SPCA | Drakenstein, Western Cape</p>
-</footer>
+<footer><p>&copy; <span id="currentYear">2026</span> Paarl SPCA</p></footer>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="js/script.js"></script>
 </body>
 </html>
