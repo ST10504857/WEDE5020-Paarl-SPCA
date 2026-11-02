@@ -44,4 +44,4 @@ Content: Paarl SPCA Official Website [Accessed 14 August 2026]
 https://github.com/ST10504857/WEDE5020-Paarl-SPCA
 
 ## Website Live Link (for Part 3)
-Live: https://we-de5020-paarl-spca.netlify.app (or your actual Netlify link) - Auto deploys from main
+https://st10504857.github.io/WEDE5020-Paarl-SPCA/
