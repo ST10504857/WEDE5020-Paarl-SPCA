@@ -3,8 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us | Paarl SPCA</title>
+    <title>About Us | Paarl SPCA - 50 Years Serving Drakenstein</title>
+    <meta name="description" content="Paarl SPCA has been serving the Drakenstein community for over 50 years. Our mission is to prevent cruelty and promote animal welfare in Paarl.">
+    <meta name="keywords" content="Paarl SPCA, animal welfare, Drakenstein, adopt, rescue, Western Cape">
+    <meta name="author" content="Paarl SPCA ST10504857">
+    <!-- Open Graph SEO -->
+    <meta property="og:title" content="About Paarl SPCA">
+    <meta property="og:description" content="Learn about our 50-year mission to protect animals in Paarl.">
+    <meta property="og:type" content="website">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
 </head>
 <body>
 <header>
@@ -19,17 +27,25 @@
 </header>
 <main>
     <h2>About Paarl SPCA</h2>
-    <p>Paarl SPCA has been serving the Drakenstein community for over 50 years. 
-    Our mission is to prevent cruelty to animals and promote animal welfare in Paarl and surrounding areas.</p>
-    
+    <p>Paarl SPCA has been serving the Drakenstein community for over 50 years. Our mission is to prevent cruelty to animals and promote animal welfare in Paarl and surrounding areas.</p>
+
     <h3>Our Vision</h3>
     <p>A community where every animal is treated with compassion and respect.</p>
 
     <h3>Our Team</h3>
     <p>We are a dedicated team of staff and volunteers who work tirelessly to rescue, rehabilitate, and rehome animals in need.</p>
+
+    <h3>Find Us - Interactive Map</h3>
+    <div id="map" style="height: 350px; width: 100%; border-radius: 10px; margin: 20px 0;"></div>
+    
+    <div style="margin: 20px 0;">
+        <input type="text" id="animalSearch" placeholder="Search our team or services..." style="padding:10px; width: 100%; max-width:400px;">
+    </div>
 </main>
 <footer>
-    <p>&copy; 2026 Paarl SPCA | Drakenstein, Western Cape</p>
+    <p>&copy; <span id="currentYear">2026</span> Paarl SPCA | Drakenstein, Western Cape</p>
 </footer>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="js/script.js"></script>
 </body>
 </html>
