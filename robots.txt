@@ -1,3 +1,3 @@
 User-agent: *
 Allow: /
-Sitemap: https://st10504857-paarl-spca.netlify.app/sitemap.xml
+Sitemap: https://st10504857.github.io/WEDE5020-Paarl-SPCA/sitemap.xml
