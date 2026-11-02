@@ -1,36 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Enquiry | Paarl SPCA</title>
-    <link rel="stylesheet" href="css/style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Adoption Enquiry | Paarl SPCA - Adopt a Pet</title>
+<meta name="description" content="Enquire about adopting a pet from Paarl SPCA. Fill in our adoption form for dogs and cats in Drakenstein.">
+<meta name="keywords" content="adopt pet Paarl, adoption enquiry SPCA, dog adoption form">
+<meta name="author" content="ST10504857">
+<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 <header>
-    <h1>Paarl SPCA</h1>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="service.html">Services</a>
-        <a href="enquiry.html">Enquiry</a>
-        <a href="contact.html">Contact</a>
-    </nav>
+<h1>Paarl SPCA</h1>
+<nav>
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="services.html">Services</a>
+<a href="enquiry.html">Enquiry</a>
+<a href="contact.html">Contact</a>
+</nav>
 </header>
 <main>
-    <h2>Send Us An Enquiry</h2>
-    <form>
-        <label>Name:</label><br>
-        <input type="text"><br><br>
-        <label>Email:</label><br>
-        <input type="email"><br><br>
-        <label>Message:</label><br>
-        <textarea rows="4"></textarea><br><br>
-        <button type="submit">Submit</button>
-    </form>
+<h2>Adoption Enquiry</h2>
+<p>Interested in adopting? Fill this form - we will contact you within 24 hours.</p>
+<form id="adoptionForm" novalidate>
+<label>Full Name: <input type="text" name="fullname" required></label><br><br>
+<label>Email: <input type="email" name="email" required></label><br><br>
+<label>Phone: <input type="tel" name="phone" required></label><br><br>
+<label>Pet interested in: <input type="text" name="pet" id="animalSearch" placeholder="e.g. Bella, cat, dog" required></label><br><br>
+<label>Why do you want to adopt?<br><textarea name="reason" required rows="4" style="width:100%; max-width:500px;"></textarea></label><br><br>
+<button type="submit">Submit Enquiry</button>
+</form>
+<div style="margin-top:20px;">
+<div class="animal-card"><h3>Bella - Dog</h3><p>2 years, friendly</p></div>
+<div class="animal-card"><h3>Mittens - Cat</h3><p>1 year, vaccinated</p></div>
+</div>
 </main>
-<footer>
-    <p>&copy; 2026 Paarl SPCA | Drakenstein, Western Cape</p>
-</footer>
+<footer><p>&copy; <span id="currentYear">2026</span> Paarl SPCA | Paarl</p></footer>
+<script src="js/script.js"></script>
 </body>
 </html>
